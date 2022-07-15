@@ -29,7 +29,6 @@ end;
 
 destructor TMaquinaDinheiro.Destroy;
 begin
-
   inherited;
 end;
 
@@ -88,7 +87,6 @@ begin
     end;
 
     Result := listaDeTroco;
-    FreeAndNil(vTroco);
 end;
 
 class function TMaquinaDinheiro.New: IMaquina;

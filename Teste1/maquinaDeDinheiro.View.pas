@@ -45,18 +45,20 @@ uses
 {$R *.dfm}
 
 procedure TForm1.btnCalculaNotasClick(Sender: TObject);
-
+var
+    troco: string;
 begin
+
+    troco := StringReplace(Edit1.Text, '.', ',', [rfReplaceAll, rfIgnoreCase]);
     listaDeCedulas := TList.Create;
     try
         listaDeCedulas := TMaquinaDinheiro
                             .New
-                            .MontarTroco(strtoFloat(Edit1.Text));
+                            .MontarTroco(strtoFloat(troco));
         ExibeResultado;
     finally
         FreeAndNil(listaDeCedulas)
     end;
-
 end;
 
 procedure TForm1.ExibeResultado;
@@ -64,7 +66,6 @@ var
     i, finalDaLista, qtd : integer;
     tipo: string;
     item: TTroco;
-
 begin
     i := 0;
     finalDaLista := pred(listaDeCedulas.Count);
@@ -107,7 +108,5 @@ begin
         ceMoeda5: Result := 'moeda(s) de 5 centavos';
         ceMoeda1: Result := 'moeda(s) de 1 centavos';
     end;
-
 end;
-
 end.
