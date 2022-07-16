@@ -1,0 +1,66 @@
+SET SQL DIALECT 3;
+
+/* CREATE DATABASE 'C:\Users\PCReis\Desktop\TESTE2.FDB' PAGE_SIZE 4096
+
+ DEFAULT CHARACTER SET NONE */
+
+/*  External Function declarations */
+
+DECLARE EXTERNAL FUNCTION RDB$GET_CONTEXT
+VARCHAR(80) CHARACTER SET NONE, VARCHAR(80) CHARACTER SET NONE
+RETURNS VARCHAR(255) CHARACTER SET NONE FREE_IT
+ENTRY_POINT 'get_context' MODULE_NAME 'system_module';
+
+
+DECLARE EXTERNAL FUNCTION RDB$SET_CONTEXT
+VARCHAR(80) CHARACTER SET NONE, VARCHAR(80) CHARACTER SET NONE, VARCHAR(255) CHARACTER SET NONE
+RETURNS INTEGER BY VALUE 
+ENTRY_POINT 'set_context' MODULE_NAME 'system_module';
+
+
+
+/* Table: item, Owner: SYSDBA */
+
+CREATE TABLE "item" 
+(
+  "idItem"	 INTEGER NOT NULL,
+  "descItem"	 VARCHAR(100) CHARACTER SET WIN1252,
+CONSTRAINT "PK_item" PRIMARY KEY ("idItem")
+);
+
+/* Table: pedidoCab, Owner: SYSDBA */
+
+CREATE TABLE "pedidoCab" 
+(
+  "idPedidoCab"	 INTEGER NOT NULL,
+  "dtEmissao"	 DATE,
+  "numero"	 INTEGER,
+  "cliente"	 VARCHAR(100) CHARACTER SET WIN1252,
+CONSTRAINT "PK_pedidoCab" PRIMARY KEY ("idPedidoCab")
+);
+
+/* Table: pedidoItem, Owner: SYSDBA */
+
+CREATE TABLE "pedidoItem" 
+(
+  "idPedidoItem"	 INTEGER NOT NULL,
+  "idPedidoCab"	 INTEGER NOT NULL,
+  "idItem"	 INTEGER NOT NULL,
+  "quantidade"	 DOUBLE PRECISION,
+  "valorUnit"	 DOUBLE PRECISION,
+  "valorTotal"	 DOUBLE PRECISION,
+CONSTRAINT "PK_pedidoItem" PRIMARY KEY ("idPedidoItem")
+);
+ALTER TABLE "pedidoItem" ADD CONSTRAINT "FK_idItem" FOREIGN KEY ("idItem") REFERENCES "item" ("idItem") ON UPDATE NO ACTION ON DELETE NO ACTION;
+ALTER TABLE "pedidoItem" ADD CONSTRAINT "FK_pedidocab" FOREIGN KEY ("idPedidoCab") REFERENCES "pedidoCab" ("idPedidoCab") ON UPDATE CASCADE ON DELETE CASCADE;
+
+
+/* Grant Roles for this database */
+
+
+/* Role: "RDB$ADMIN", Owner: SYSDBA */
+
+CREATE ROLE "RDB$ADMIN";
+
+/* Grant permissions for this database */
+
