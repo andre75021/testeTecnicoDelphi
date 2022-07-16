@@ -75,6 +75,7 @@ begin
     if not (key in ['0'..'9',',','.', #8]) then
     begin
         ShowMessage('Somente números deverão ser digitado');
+        exit
     end;
 end;
 
@@ -130,17 +131,33 @@ var
     valorEntrada: string;
 begin
     valorEntrada := StringReplace(Edit1.Text, '.', ',', [rfReplaceAll, rfIgnoreCase]);
-    if (Edit1.Text = '') or (StrToFloat(valorEntrada) < 0) then
+    if (Edit1.Text = '') then
     begin
         ShowMessage('Valor inválido, Entre com um número válido');
         Edit1.SetFocus;
         exit
     end;
 
-    if StrToFloat(valorEntrada) = 0 then
-    begin
-        memDisplay.Lines.Clear;
-        memDisplay.Lines.Add('Nenhum troco será necessário');
+    try
+        if (StrToFloat(valorEntrada) < 0) then
+        begin
+            ShowMessage('Valor inválido, Entre com um número válido');
+            Edit1.SetFocus;
+            exit;
+        end;
+    except
+        raise Exception.Create('Digite um valor válido');
+    end;
+
+
+    try
+        if StrToFloat(valorEntrada) = 0 then
+        begin
+            memDisplay.Lines.Clear;
+            memDisplay.Lines.Add('Nenhum troco será necessário');
+        end;
+    except
+        raise Exception.Create('Digite um valor válido');
     end;
 end;
 
