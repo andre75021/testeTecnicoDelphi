@@ -1,0 +1,9 @@
+unit pedido.Model.interfaces;
+
+interface
+
+type
+    iItem = interface(TinterfacedO
+implementation
+
+end.

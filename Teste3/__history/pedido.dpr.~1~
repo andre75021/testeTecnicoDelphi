@@ -1,0 +1,14 @@
+program pedido;
+
+uses
+  Vcl.Forms,
+  pedido.view.principal in 'pedido.view.principal.pas' {Form2};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm2, Form2);
+  Application.Run;
+end.

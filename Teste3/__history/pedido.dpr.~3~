@@ -1,0 +1,18 @@
+program pedido;
+
+uses
+  Vcl.Forms,
+  pedido.view.principal in 'pedido.view.principal.pas' {frmPrincipal},
+  pedido.view.manutencaoDeItens in 'pedido.view.manutencaoDeItens.pas' {frmManutencaoItens},
+  pedido.view.manutencaoDePedidos in 'view\pedido.view.manutencaoDePedidos.pas' {frmManutencaoPedidos};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.CreateForm(TfrmManutencaoItens, frmManutencaoItens);
+  Application.CreateForm(TfrmManutencaoPedidos, frmManutencaoPedidos);
+  Application.Run;
+end.

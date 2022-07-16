@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/07/16 11:00:14.000.133,=C:\Users\PCReis\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2022/07/16 11:01:51.000.319,C:\Users\PCReis\Documents\Embarcadero\Studio\Projects\Unit2.pas=F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste3\pedido.view.principal.pas</Transaction>
+    <Transaction>2022/07/16 11:01:51.000.319,C:\Users\PCReis\Documents\Embarcadero\Studio\Projects\Unit2.dfm=F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste3\pedido.view.principal.dfm</Transaction>
+    <Transaction>2022/07/16 11:02:03.000.044,C:\Users\PCReis\Documents\Embarcadero\Studio\Projects\Project2.dproj=F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste3\pedido.dproj</Transaction>
+    <Transaction>2022/07/16 11:08:48.000.489,=F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste3\Unit1.pas</Transaction>
+    <Transaction>2022/07/16 11:10:41.000.969,F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste3\Unit1.dfm=F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste3\pedido.view.manutencaoDeItens.dfm</Transaction>
+    <Transaction>2022/07/16 11:10:41.000.969,F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste3\Unit1.pas=F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste3\pedido.view.manutencaoDeItens.pas</Transaction>
+    <Transaction>2022/07/16 11:14:00.000.825,=F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste3\Unit1.pas</Transaction>
+    <Transaction>2022/07/16 11:15:50.000.618,F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste3\Unit1.pas=F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste3\view\pedido.view.manutencaoDePedidos.pas</Transaction>
+    <Transaction>2022/07/16 11:15:50.000.618,F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste3\Unit1.dfm=F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste3\view\pedido.view.manutencaoDePedidos.dfm</Transaction>
+    <Transaction>2022/07/16 11:17:36.921,=F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste3\view\pedido.view.principal.pas</Transaction>
+    <Transaction>2022/07/16 11:17:50.836,=F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste3\view\pedido.view.manutencaoDeItens.pas</Transaction>
+    <Transaction>2022/07/16 11:22:08.895,=F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste3\Unit1.pas</Transaction>
+    <Transaction>2022/07/16 11:22:55.362,F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste3\model\pedido.Model.interfaces.pas=F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste3\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -29,6 +29,7 @@ type
     function NotaComQuantidade(Value: TCedula): string;
     procedure Edit1Exit(Sender: TObject);
     procedure Edit1KeyPress(Sender: TObject; var Key: Char);
+    procedure FormKeyPress(Sender: TObject; var Key: Char);
   private
     { Private declarations }
   public
@@ -106,6 +107,15 @@ begin
         memDisplay.Lines.Add(qtd.ToString + ' ' + tipo);
 
         i := i+1;
+    end;
+end;
+
+procedure TForm1.FormKeyPress(Sender: TObject; var Key: Char);
+begin
+    if Key = #13 then
+    begin
+        Key := #0;
+        Perform(WM_NEXTDLGCTL, 0, 0);
     end;
 end;
 
