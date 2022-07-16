@@ -4,18 +4,18 @@
     <Transaction>2022/03/06 16:20:45.000.464,=C:\Users\PCReis\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>2022/03/06 16:24:12.000.326,C:\Users\PCReis\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\PCReis\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
     <Transaction>2022/07/13 17:03:29.000.416,=C:\Users\PCReis\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2022/07/13 17:05:11.000.866,C:\Users\PCReis\Documents\Embarcadero\Studio\Projects\Unit1.pas=F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste1\maquinaDeDinheiro.View.pas</Transaction>
-    <Transaction>2022/07/13 17:05:11.000.866,C:\Users\PCReis\Documents\Embarcadero\Studio\Projects\Unit1.dfm=F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste1\maquinaDeDinheiro.View.dfm</Transaction>
-    <Transaction>2022/07/13 17:05:33.000.002,C:\Users\PCReis\Documents\Embarcadero\Studio\Projects\Project1.dproj=F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste1\maquinaDeDinheiro.dproj</Transaction>
+    <Transaction>2022/07/13 17:05:11.000.866,F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste1\maquinaDeDinheiro.View.pas=C:\Users\PCReis\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/07/13 17:05:11.000.866,F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste1\maquinaDeDinheiro.View.dfm=C:\Users\PCReis\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/07/13 17:05:33.000.002,F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste1\maquinaDeDinheiro.dproj=C:\Users\PCReis\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
     <Transaction>2022/07/13 17:06:21.000.108,=F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste1\Unit1.pas</Transaction>
-    <Transaction>2022/07/13 17:06:52.000.848,F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste1\Unit1.pas=F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste1\maquinaDeDinheiro.Interfaces.pas</Transaction>
+    <Transaction>2022/07/13 17:06:52.000.848,F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste1\maquinaDeDinheiro.Interfaces.pas=F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste1\Unit1.pas</Transaction>
     <Transaction>2022/07/13 17:10:51.000.850,=F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste1\Unit1.pas</Transaction>
-    <Transaction>2022/07/13 17:11:42.000.300,F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste1\Unit1.pas=F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste1\maquinaDeDinheiro.classe.MaquinaDinheiro.pas</Transaction>
-    <Transaction>2022/07/13 17:12:42.000.724,F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste1\maquinaDeDinheiro.Interfaces.pas=F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste1\maquinaDeDinheiro.Interfaces.MaquinaDinheiro.pas</Transaction>
+    <Transaction>2022/07/13 17:11:42.000.300,F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste1\maquinaDeDinheiro.classe.MaquinaDinheiro.pas=F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste1\Unit1.pas</Transaction>
+    <Transaction>2022/07/13 17:12:42.000.724,F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste1\maquinaDeDinheiro.Interfaces.MaquinaDinheiro.pas=F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste1\maquinaDeDinheiro.Interfaces.pas</Transaction>
     <Transaction>2022/07/13 17:45:39.000.627,=F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste1\Unit1.pas</Transaction>
-    <Transaction>2022/07/13 17:46:05.000.268,F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste1\Unit1.pas=F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste1\maquinaDeDinheiro.classe.troco.pas</Transaction>
-    <Transaction>2022/07/14 21:58:57.576,=F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste1\Unit1.pas</Transaction>
-    <Transaction>2022/07/14 21:59:12.764,F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste1\maquinaDeDinheiro.Interfaces.troco.pas=F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste1\Unit1.pas</Transaction>
-    <Transaction>2022/07/14 22:19:47.671,F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste1\maquinaDeDinheiro.Interfaces.troco.pas=</Transaction>
+    <Transaction>2022/07/13 17:46:05.000.268,F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste1\maquinaDeDinheiro.classe.troco.pas=F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste1\Unit1.pas</Transaction>
+    <Transaction>2022/07/14 21:58:57.000.576,=F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste1\Unit1.pas</Transaction>
+    <Transaction>2022/07/14 21:59:12.000.764,F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste1\Unit1.pas=F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste1\maquinaDeDinheiro.Interfaces.troco.pas</Transaction>
+    <Transaction>2022/07/14 22:19:47.000.671,F:\Andre\programacao\workspace\Delphi\Teste Tecnico\testeTecnicoDelphi\Teste1\maquinaDeDinheiro.Interfaces.troco.pas=</Transaction>
   </Transactions>
 </BorlandProject>

@@ -34,8 +34,8 @@ end;
 
 function TMaquinaDinheiro.MontarTroco(troco: double): Tlist;
 const
-    cedulas: Array[1..6] of integer = (100,50,20,10,5,2);
-    moedas: Array[1..6]  of integer = (100, 50, 25, 10, 5, 1);
+    cedulas: Array[1..7] of integer = (100,50,20,10,5,2,1);
+    moedas: Array[1..5]  of integer = (50, 25, 10, 5, 1);
 var
     vTroco: TTroco;
     parteInteira, parteDecimal, i, jMoeda: integer;
@@ -65,7 +65,7 @@ begin
 
     // Definindo a parte decimal e calculando a quantidade de moedas.
     parteDecimal := Round(Frac(troco)* 100);
-    jMoeda := 6; // Pega o índice da primeira moeda no enumerado.
+    jMoeda := 7; // Pega o índice da primeira moeda no enumerado.
     i := 0;
 
     while parteDecimal <> 0 do

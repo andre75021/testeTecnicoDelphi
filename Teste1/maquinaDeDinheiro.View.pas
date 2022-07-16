@@ -22,9 +22,13 @@ type
     Edit1: TEdit;
     btnCalculaNotas: TButton;
     memDisplay: TMemo;
+    Label1: TLabel;
     procedure btnCalculaNotasClick(Sender: TObject);
     procedure ExibeResultado;
+    procedure ValidaEntrada;
     function NotaComQuantidade(Value: TCedula): string;
+    procedure Edit1Exit(Sender: TObject);
+    procedure Edit1KeyPress(Sender: TObject; var Key: Char);
   private
     { Private declarations }
   public
@@ -61,6 +65,19 @@ begin
     end;
 end;
 
+procedure TForm1.Edit1Exit(Sender: TObject);
+begin
+    ValidaEntrada;
+end;
+
+procedure TForm1.Edit1KeyPress(Sender: TObject; var Key: Char);
+begin
+    if not (key in ['0'..'9',',','.', #8]) then
+    begin
+        ShowMessage('Somente números deverão ser digitado');
+    end;
+end;
+
 procedure TForm1.ExibeResultado;
 var
     i, finalDaLista, qtd : integer;
@@ -77,7 +94,6 @@ begin
     begin
         qtd := 0;
         item := nil;
-
         item := listaDeCedulas.Items[i];
         if not (item.GetQuantidade > 0) then
         begin
@@ -101,12 +117,31 @@ begin
         ceNota10: Result := 'cédula(s) de 10 Reais';
         ceNota5: Result := 'cédula(s) de 5 Reais';
         ceNota2: Result := 'cédula(s) de 2 Reais';
-        ceMoeda100: Result := 'moeda(s) de 1 centavos';
-        ceMoeda50: Result := 'moeda(s) de 50 centavos';
-        ceMoeda25: Result := 'moeda(s) de 25 centavos';
-        ceMoeda10: Result := 'moeda(s) de 10 centavos';
-        ceMoeda5: Result := 'moeda(s) de 5 centavos';
-        ceMoeda1: Result := 'moeda(s) de 1 centavos';
+        ceMoeda100: Result := 'moeda(s) de 1 Real';
+        ceMoeda50: Result := 'moeda(s) de 50 Centavos';
+        ceMoeda25: Result := 'moeda(s) de 25 Centavos';
+        ceMoeda10: Result := 'moeda(s) de 10 Centavos';
+        ceMoeda5: Result := 'moeda(s) de 5 Centavos';
+        ceMoeda1: Result := 'moeda(s) de 1 Centavos';
     end;
 end;
+procedure TForm1.ValidaEntrada;
+var
+    valorEntrada: string;
+begin
+    valorEntrada := StringReplace(Edit1.Text, '.', ',', [rfReplaceAll, rfIgnoreCase]);
+    if (Edit1.Text = '') or (StrToFloat(valorEntrada) < 0) then
+    begin
+        ShowMessage('Valor inválido, Entre com um número válido');
+        Edit1.SetFocus;
+        exit
+    end;
+
+    if StrToFloat(valorEntrada) = 0 then
+    begin
+        memDisplay.Lines.Clear;
+        memDisplay.Lines.Add('Nenhum troco será necessário');
+    end;
+end;
+
 end.
